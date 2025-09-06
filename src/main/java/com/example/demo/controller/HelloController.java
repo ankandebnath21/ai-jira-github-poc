@@ -9,6 +9,6 @@ public class HelloController {
     
     @GetMapping("/hello")
     public String sayHello(){
-        return "Hello, Jira-AI Integration";
+        return "Hello world";
     }
 }
