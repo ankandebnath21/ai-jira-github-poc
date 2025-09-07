@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
     
     @GetMapping("/hello")
     public String sayHello(){
-        return "Hello, Jira-AI Integration";
+        return "Hello, Jira-AI Integration from JIRA";
     }
 }
 }
