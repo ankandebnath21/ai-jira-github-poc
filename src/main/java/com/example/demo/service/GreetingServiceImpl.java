@@ -5,8 +5,17 @@ import org.springframework.stereotype.Service;
 @Service
 public class GreetingServiceImpl implements GreetingService {
 
-    @Override
     public String getDefaultGreeting() {
         return "Hello World";
     }
+
+    @Override
+    public String getGreeting(String name) {
+        if (name == null || name.isEmpty()) {
+            return getDefaultGreeting();
+        }
+        return "Hello, " + name;
+    }
+}
+
 }
